@@ -306,7 +306,9 @@ header {
 // aboutus
 .aboutus {
   padding: 14rem 0 4rem;
-
+  @media screen and (max-width: 800px) {
+    padding: 8rem 0 4rem;
+  }
   .about__title_area {
     margin: 0 auto;
     width: 600px;
@@ -419,6 +421,12 @@ header {
       h4 {
         letter-spacing: 0.1rem;
       }
+      @media (max-width: 1200px) and (min-width: 800px) {
+        padding: 2rem;
+        h4 {
+          font-size: 1.2rem;
+        }
+      }
     }
     .card_insurance {
       background: #224870;
@@ -457,8 +465,24 @@ header {
     border-radius: 1rem;
     width: 75%;
     color: $white_color;
-    @media (max-width: 900px) {
+
+    @media (max-width: 800px) {
       width: 100%;
+      padding: 3rem;
+      h2 {
+        font-size: 2.5rem;
+      }
+      h4 {
+        font-size: 1.4rem;
+      }
+    }
+    @media (max-width: 400px) {
+      h2 {
+        font-size: 1.8rem;
+      }
+      h4 {
+        font-size: 1rem;
+      }
     }
   }
   .profile_button {
@@ -506,6 +530,7 @@ header {
 
 .clients {
   padding: 8rem 0rem 14rem;
+
   .content {
     .big_title {
       font-weight: 800;
@@ -549,6 +574,20 @@ header {
       position: absolute;
       img {
         border-radius: 1rem;
+      }
+    }
+  }
+  @media (max-width: 900px) {
+    padding: 6rem 0;
+    .testimonial_area {
+      padding: 2rem;
+      .avator_icon {
+        h4 {
+          font-size: 1.2rem;
+        }
+        p {
+          font-size: 1rem;
+        }
       }
     }
   }
@@ -703,6 +742,7 @@ header {
       border-radius: 0rem 0rem 1rem 0rem;
       z-index: 0;
     }
+
     @media screen and (min-width: 680px) and (max-width: 1200px) {
       &::before {
         height: 60%;

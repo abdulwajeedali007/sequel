@@ -6,6 +6,14 @@ $(document).ready(function () {
     autoplay: true,
     nav: true,
     dots: false,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 1,
+      },
+    },
   });
 });
 

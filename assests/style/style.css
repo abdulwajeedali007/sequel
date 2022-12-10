@@ -333,6 +333,11 @@ header nav .navbar-brand span.sub_title {
 .aboutus {
   padding: 14rem 0 4rem;
 }
+@media screen and (max-width: 800px) {
+  .aboutus {
+    padding: 8rem 0 4rem;
+  }
+}
 .aboutus .about__title_area {
   margin: 0 auto;
   width: 600px;
@@ -468,6 +473,14 @@ header nav .navbar-brand span.sub_title {
 .staffing .content .card_box h4 {
   letter-spacing: 0.1rem;
 }
+@media (max-width: 1200px) and (min-width: 800px) {
+  .staffing .content .card_box {
+    padding: 2rem;
+  }
+  .staffing .content .card_box h4 {
+    font-size: 1.2rem;
+  }
+}
 .staffing .content .card_insurance {
   background: #224870;
 }
@@ -506,9 +519,24 @@ header nav .navbar-brand span.sub_title {
   width: 75%;
   color: #fff;
 }
-@media (max-width: 900px) {
+@media (max-width: 800px) {
   .profile .content {
     width: 100%;
+    padding: 3rem;
+  }
+  .profile .content h2 {
+    font-size: 2.5rem;
+  }
+  .profile .content h4 {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 400px) {
+  .profile .content h2 {
+    font-size: 1.8rem;
+  }
+  .profile .content h4 {
+    font-size: 1rem;
   }
 }
 .profile .profile_button {
@@ -597,6 +625,20 @@ header nav .navbar-brand span.sub_title {
 }
 .clients .testimonial_area .image__area img {
   border-radius: 1rem;
+}
+@media (max-width: 900px) {
+  .clients {
+    padding: 6rem 0;
+  }
+  .clients .testimonial_area {
+    padding: 2rem;
+  }
+  .clients .testimonial_area .avator_icon h4 {
+    font-size: 1.2rem;
+  }
+  .clients .testimonial_area .avator_icon p {
+    font-size: 1rem;
+  }
 }
 
 .footer {
