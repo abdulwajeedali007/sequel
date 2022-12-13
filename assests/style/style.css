@@ -545,6 +545,7 @@ header nav .navbar-brand span.sub_title {
 }
 
 .footer {
+  position: relative;
   padding: 6rem 1rem;
   background: #c54100;
   color: #fff;
@@ -564,6 +565,36 @@ header nav .navbar-brand span.sub_title {
 @media (max-width: 500px) {
   .footer .services_points p {
     padding-left: 0;
+  }
+}
+.footer .gototop {
+  position: absolute;
+  top: -1rem;
+  right: 3rem;
+  background: #01308c;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 3rem;
+  cursor: pointer;
+  -webkit-animation: animate 1.5s ease infinite;
+          animation: animate 1.5s ease infinite;
+}
+@-webkit-keyframes animate {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+@keyframes animate {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
   }
 }
 

@@ -15,6 +15,25 @@ $(document).ready(function () {
       },
     },
   });
+  // whatsapp floating button
+  $(function () {
+    $("#whatsapp-chatbot").floatingWhatsApp({
+      phone: "+917218712789",
+
+      showPopup: true,
+      message: "Write here...",
+      headerTitle: "Sequel whatsapp chatbox",
+      size: "40px",
+      // backgroundColor: "#01308c",
+      headerColor: "#01308c",
+    });
+  });
+});
+
+//goto top
+let gototop = document.querySelector(".gototop");
+gototop.addEventListener("click", () => {
+  window.scrollTo(0, 0);
 });
 
 // year adding in footer

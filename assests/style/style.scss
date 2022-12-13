@@ -511,6 +511,7 @@ header {
 
 // footer-all-pages
 .footer {
+  position: relative;
   padding: 6rem 1rem;
   background: $orange-color;
   color: $white_color;
@@ -531,6 +532,28 @@ header {
       @media (max-width: 500px) {
         padding-left: 0;
       }
+    }
+  }
+  .gototop {
+    position: absolute;
+    top: -1rem;
+    right: 3rem;
+    background: $primary_color;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 3rem;
+    cursor: pointer;
+    animation: animate 1.5s ease infinite;
+  }
+  @keyframes animate {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
     }
   }
 }
